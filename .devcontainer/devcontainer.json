@@ -1,0 +1,19 @@
+{
+    "name": "My Codespace Environment",
+    "build": {
+        "dockerfile": "../Dockerfile"
+    },
+    "forwardPorts": [6080],
+    "portsAttributes": {
+        "6080": {
+            "label": "noVNC",
+            "onAutoForward": "openPreview"
+        }
+    },
+    "postCreateCommand": "echo 'Codespace ready! Access noVNC at port 6080'",
+    "customizations": {
+        "vscode": {
+            "extensions": []
+        }
+    }
+}
